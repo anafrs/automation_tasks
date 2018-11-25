@@ -5,7 +5,7 @@ engine = create_engine('XXXX')
 df = pd.read_sql_query("SELECT * FROM entry", engine)
 
 #defining time
-today = date.today()
+today = datetime.now()
 one_week = today + timedelta(days=7)
 two_weeks = today + timedelta(days=14)
 
