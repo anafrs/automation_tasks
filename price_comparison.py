@@ -35,7 +35,7 @@ subject= "Metasearch warning"
 message = ','.join(cheaper_offers) + '.'
 
 #TODO create if function to send email if list cheaper_offers has anything appended
-  if...........
+  if len(cheaper_offers) > 3:
       #send email
       server = smtplib.SMTP(server)
             server.login("NAME","PAssword")
